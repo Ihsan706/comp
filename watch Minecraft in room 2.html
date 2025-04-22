@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://192.168.1.109/1/vid/moves/movie/move-room-number2.php -->
+<html lang="en" style="background-color: black;"><plasmo-csui><template shadowrootmode="open"><style>.t7GE2a_bgLayer{filter:brightness(.4);background-position:50%;background-size:cover;width:100vw;height:100vh;position:fixed;top:0;left:0}.t7GE2a_container{justify-content:center;align-items:center;width:100vw;height:100vh;font-family:serif;transition:opacity .5s;display:flex}.t7GE2a_modalContainer{color:#000;background-color:#fff;width:30vw;min-width:300px;font-family:serif;transition:opacity .5s;position:fixed;top:20vh;box-shadow:3px 3px 8px #7e7e7e}.t7GE2a_buttonsWrapper{display:flex;position:absolute;bottom:10px;right:0}.t7GE2a_modalMargin{margin:20px 20px 50px}.t7GE2a_modalContentWrapper{padding-bottom:20px}.t7GE2a_headerTitle{text-align:center;margin:0 0 20px;font-size:18px}.t7GE2a_button{box-sizing:border-box;color:#238518;cursor:pointer;text-shadow:none;text-underline-offset:1px;user-select:none;touch-action:manipulation;white-space:nowrap;word-break:break-word;background-color:#e9ffe7;background-position:0 0;border:1px solid #cae1cc;border-radius:11px;align-items:center;margin-right:10px;padding:2px 12px;font-size:1rem;line-height:26px;transition:border .4s ease-in-out,box-shadow .4s ease-in-out,background-color .4s ease-in-out;display:flex}.t7GE2a_button:hover{background-color:#c3ffc1;border-color:#71e176}@media (width>=1000px){.t7GE2a_container{min-width:500px}.t7GE2a_headerTitle{font-size:40px}.t7GE2a_modalContentWrapper{font-size:25px}}
+.tYWpxa_shareButtonContainer{display:inline-block;position:relative}.tYWpxa_shareButton{color:#fff;cursor:pointer;background-color:#4caf50;border:none;border-radius:5px;padding:10px 20px;font-size:16px;transition:background-color .3s}.tYWpxa_shareButton:hover{background-color:#45a049}.tYWpxa_dropdown{background-color:#fff;border:1px solid #ccc;border-radius:5px;flex-direction:column;gap:10px;margin-top:5px;padding:10px;display:flex;position:absolute;top:100%;left:0;box-shadow:0 8px 16px #0003}.tYWpxa_shareOption{justify-content:center;align-items:center;display:flex}.tYWpxa_shareOption a{color:inherit;border-radius:5px;padding:8px;text-decoration:none;transition:background-color .3s}.tYWpxa_shareOption a:hover{background-color:#f0f0f0}.tYWpxa_shareOption svg{transition:transform .3s}.tYWpxa_shareOption a:hover svg{transform:scale(1.1)}</style><div id="plasmo-shadow-container" style="z-index: 2147483647; position: relative;"><div id="plasmo-overlay-0" class="plasmo-csui-container" style="display: flex; position: absolute; top: 0px; left: 0px;"></div></div></template></plasmo-csui><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="icon" type="image/png" href="m.png">
+<style>
+body,html{
+    width: 100%;
+overflow-x: hidden;
+    overflow-y: visible;
+    }
+.mov , .nmov{
+    object-fit: cover;
+    background-color: #00e7ff4d;
+
+    width: 100vw;
+}
+.h1{
+    height: min-content;
+    width: max-content;
+color:#bac5ff;
+  animation-name: text;
+animation-iteration-count: infinite;
+  animation-duration: 15s;
+animation-timing-function:linear;
+}
+
+
+@keyframes text {
+0%{transform: translateX(100vw);}
+100%{transform: translateX(-100%);}
+}
+.nmov{
+object-fit: contain;
+}
+.button{
+color:#bac5ff;
+    background-color:#2b00ff;
+    height: 12vw;
+    width: 100vw;
+    border: 0px;
+    padding: 0px;
+font-size:8vw;
+
+}
+#h3{
+    margin: 0px;
+    font-size: 8vw;
+    position: relative;
+
+}
+</style></head>
+
+
+<body style="cursor: auto;">
+<title>watch Minecraft in room 2</title>
+<h1 class="h1">Minecraft</h1>
+<video id="videoPlayer" class="mov" controls="" controlslist="nodownload">
+<source src="pro.mp4" type="video/mp4">
+<track src="EN.vtt" kind="subtitles" srclang="en" label="En">
+<track src="AR.vtt" kind="subtitles" srclang="ar" label="AR">
+</video>
+<button type="button" name="button1" class="button" onclick="chenge()"><h3 id="h3">scale-down/fit video size</h3></button>
+<h1>20250401</h1>
+<script>
+function chenge(){
+	  //console.log(Element.classList.contains("mov"))
+	  //element = document.getElementsByClassName("mov");
+	  //	  element2 = document.getElementsByClassName("h3");
+	  element = document.getElementById("videoPlayer");
+	  element2 = document.getElementById("h3");
+	  console.log(element);
+	  console.log(element2);
+	  if(element.classList == "mov"){
+		element2.innerHTML = "scale-up/fit screen";
+	  element.classList.remove("mov"); // Remove mystyle class from DIV
+      element.classList.add("nmov"); // Add newone class to DIV
+	  }else{
+		element2.innerHTML = "scale-down/fit video size";
+	  element.classList.remove("nmov"); // Remove mystyle class from DIV
+      element.classList.add("mov"); // Add newone class to DIV
+	  }
+}
+</script>
+
+</body></html>
